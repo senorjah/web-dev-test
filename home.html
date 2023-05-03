@@ -2,15 +2,33 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<script src="site.js"></script>
 <style>
-    .about-col-1 {
-       size: 25%;
-       display: inline; 
+
+    p {
+        font-size: 24px;
+        color: white;
     }
 
-    .about-col-2 {
-       size: 25%;
-       display: inline; 
+    .center {
+        text-align: center;
+    }
+
+    img {
+      max-width: 50%;  
+    }
+
+    .col {
+        float: left;
+        display: flex;
+        width: 600px;
+        padding: 5px;
+    }
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
     }
 </style>
 <body>
@@ -28,22 +46,19 @@
     <section id="home">
         <div class="container">
             <div class="row">
-                <div class="about-col-1">
-                    <img id="profile" src="images/user.jpeg">
+                <div class="col">
+                    <center><img id="profile" src="https://i.imgur.com/EcrdNnt.jpg"></center>
                 </div>
-                <div class="about-col-2">
-                    <img src="images/user2.png">
-                    <p>
+                <div class="col">
+                    <center><img id = "main-pic" src="https://i.imgur.com/3nxsSHV.jpg"></center>
+                </div>
+            <center><p>
                         Hi, I'm Nathaniel Gladstone-Lyon, I help bring ideas into existence. Some days a video editor, 
                         sound designer, and some days confused.
-                    </p>
+                    </p></center>
                 </div>  
             </div>
         </div>
-        </section>
-        <h2>Software Used</h2>
-        <p>
-            Davinci Resolve
-        </p>
     </div>
+</section>
 </body> 

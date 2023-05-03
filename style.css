@@ -4,6 +4,9 @@ body {
 }
 
 iframe {
+  margin: auto;
+  display: block;
+  border-style: none;
 }
 
 html {
@@ -11,20 +14,32 @@ html {
 }
 
 #navbar {
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
   overflow: hidden;
-  background-color: #222;
+  background-color: #dadada;
 }
 
-#navbar a {
+#navbar li {
+  align-items: center;
   text-decoration: none;
-  float: left;
   font-family: Roboto;
   font-size: 24px;
   width: 100%;
   display: inline;
-  justify-content: space-between;
   padding: 10px 25px;
-  align-items: center;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding 10px;
+}
+
+a {
+  text-decoration: none;
 }
 
 ul {
@@ -40,6 +55,10 @@ ul {
 }
 
 #profile {
+  max-width: 50%;
+}
+
+#main-pic {
   max-width: 50%;
 }
 
@@ -65,7 +84,7 @@ li {
 
 @media screen and (min-width: 480px) {
   body {
-    max-width: 1000px;
+
   }
 }
 
@@ -83,13 +102,19 @@ li {
   font-size: 18px;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 div > row {
   align-items: center;
 }
 
 #home {
-  background-color: #5f9ea0;
-  height: 50%;
+  background-color: #5f6ea0;
+  height: 100%;
 }
 
 #about {

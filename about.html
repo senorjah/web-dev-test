@@ -4,9 +4,22 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
 <style>
-    h2 {
+    .about {
+        display: grid;
         align-items: center;
-        text-align: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 5px;
+    }
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+        float: left;
+    }
+
+    .text {
+        font-size: 24;
+        max-width: 200%;
     }
 </style>
 <body>
@@ -74,13 +87,20 @@
             <li><a href="./contact.html">Contact</a></li>
         </ul>
     </div>
-    <div id="about">
-        <h1>About</h1>
-            <img id="profile" src="Images/user2.jpg">
-            <h2>Hi, I'm Nathaniel Gladstone-Lyon, I help bring ideas into existence. Some days a video editor, 
-            sound designer, and some days confused
-            </h2>
-        <p></p>
+    <img class="profile" src="https://i.imgur.com/3nxsSHV.jpg">
+    <div class="about">
+        <div class="text">
+            <h1>About</h1>
+            <p class="text">
+            Nathaniel Gladstone-Lyon is a musical artist, producer, videoeditor, and etc. based out of the LA area, although some days he’s both of these things and some days neither. 
+            I can’t decide sometimes, let’s switch to first person. I’m struggling with indecision so I might not even want to be a musician some days.
+            I like to make noises with my mouth and then transfer them into songs, however long this process takes will refine the end result. 
+            I want to do something, most of the times, anything and it helps if you give me something to do, because I can get it done.
+            anything and so started to work on albums and songs with no release plan or strategy, with the end goal of getting something done. 
+            Born in 2002 and coming into 2023 with a neverending mental tracklist and 100s of unfinished project files you can be rest assured that he’s not Than-X everyday 
+            but when the time comes, he will be.
+            </p>
+        </div>
     </div>
 </body>
 
